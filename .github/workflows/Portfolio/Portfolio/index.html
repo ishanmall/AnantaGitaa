@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishan Mall | Android Developer</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            margin-top: 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header h2 {
+            margin: 10px 0;
+            font-weight: 300;
+            color: #bdc3c7;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 0.9em;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Main Content Styling */
+        main {
+            background: white;
+            padding: 30px;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        /* Grid Layouts */
+        .grid-2-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: #f1f2f6;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .skill-box h4 {
+            margin-top: 0;
+            color: var(--secondary-color);
+        }
+
+        .skill-box ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        /* Project Cards */
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .project-card h4 {
+            margin-top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .grid-2-col {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <img src="Screenshot 2026-07-27 110703.png" alt="Ishan Mall" class="profile-img">
+            <h1>Ishan Mall</h1>
+            <h2>Android Developer</h2>
+            <div class="contact-info">
+                <span>📍 Gorakhpur, Uttar Pradesh, India</span><br><br>
+                <a href="mailto:ishanmall789@gmail.com">📧 ishanmall789@gmail.com</a> |
+                <a href="tel:+917800250258">📞 +91 7800250258</a> <br><br>
+                <a href="https://www.linkedin.com/in/ishan-mall-4b20ab296/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/lucifermahadev" target="_blank">GitHub</a> |
+                <a href="https://play.google.com/store/apps/dev?id=4926136840256493221" target="_blank">Google Play</a>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <main>
+            <!-- Professional Summary & Objective -->
+            <section class="grid-2-col">
+                <div>
+                    <h3>Professional Summary</h3>
+                    <p>Android Developer with experience building and publishing production-ready Android applications using Kotlin, Java, Jetpack Compose, MVVM, Room, Hilt, Firebase, and Media3. Skilled in clean architecture, responsive UI development, debugging, performance optimization, and Google Play Store deployment.</p>
+                </div>
+                <div>
+                    <h3>Career Objective</h3>
+                    <p>To build high-quality Android applications, continuously improve my software development skills, create useful products for users, and grow as a professional Android developer.</p>
+                </div>
+            </section>
+
+            <!-- Technical Skills -->
+            <section>
+                <h3>Technical Skills</h3>
+                <div class="skills-container">
+                    <div class="skill-box">
+                        <h4>Programming</h4>
+                        <ul>
+                            <li>Kotlin</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                    <div class="skill-box">
+                        <h4>Android Architecture & UI</h4>
+                        <ul>
+                            <li>Android SDK</li>
+                            <li>Jetpack Compose</li>
+                            <li>Material Design 3</li>
+                            <li>MVVM, Clean Architecture</li>
+                        </ul>
+                    </div>
+                    <div class="skill-box">
+                        <h4>Libraries & Data</h4>
+                        <ul>
+                            <li>Room Database</li>
+                            <li>Hilt (Dependency Injection)</li>
+                            <li>Media3 / ExoPlayer</li>
+                        </ul>
+                    </div>
+                    <div class="skill-box">
+                        <h4>Tools & Platforms</h4>
+                        <ul>
+                            <li>Android Studio</li>
+                            <li>Git & GitHub</li>
+                            <li>Google Play Console</li>
+                            <li>Google AdMob</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Published Applications / Projects -->
+            <section>
+                <h3>Published Applications & Major Projects</h3>
+                
+                <div class="project-card">
+                    <h4>GalleryBox – Offline Gallery App 
+                        <a href="https://play.google.com/store/apps/details?id=com.gallerybox" target="_blank" class="btn">View on Play Store</a>
+                    </h4>
+                    <p><strong>Package:</strong> com.gallerybox</p>
+                    <p>An offline gallery application featuring Photo Gallery, Albums, Stories, Music/Video Player, Favorites, Trash, Hidden Media, Duplicate Finder, Slideshow, SD Card Support, Equalizer, Sleep Timer, Room Database, and MediaStore Integration.</p>
+                </div>
+
+                <div class="project-card">
+                    <h4>Resume Maker – ATS Resume Builder
+                        <a href="https://play.google.com/store/apps/details?id=com.ishanmall.resumemaker" target="_blank" class="btn">View on Play Store</a>
+                    </h4>
+                    <p><strong>Package:</strong> com.ishanmall.resumemaker</p>
+                    <p>Features include an Offline ATS Resume Builder, customizable Resume Templates, and robust PDF Export functionality.</p>
+                </div>
+
+                <div class="project-card">
+                    <h4>Ananta Gita – Bhagavad Gita App
+                        <a href="https://play.google.com/store/apps/details?id=com.anantagita" target="_blank" class="btn">View on Play Store</a>
+                    </h4>
+                    <p><strong>Package:</strong> com.anantagita</p>
+                    <p>Features include Offline Bhagavad Gita, Hindi Chapters, Large Fonts for accessibility, and a modern Material Design Interface.</p>
+                </div>
+
+                <div class="project-card">
+                    <h4>Ananta Brahmanda – Educational App
+                        <a href="https://play.google.com/store/apps/details?id=com.brahmanda" target="_blank" class="btn">View on Play Store</a>
+                    </h4>
+                    <p><strong>Package:</strong> com.brahmanda</p>
+                    <p>Educational platform focused on Hindu Cosmology, Vedic Knowledge, and Sanatan Educational Content.</p>
+                </div>
+            </section>
+
+            <!-- Experience Highlights -->
+            <section class="grid-2-col">
+                <div>
+                    <h3>Google Play & AdMob Experience</h3>
+                    <ul>
+                        <li><strong>Play Console:</strong> App Publishing, Internal/Closed Testing, Production Releases, Store Listing, Play App Signing.</li>
+                        <li><strong>AdMob:</strong> Banner Ads, Interstitial Ads, App Monetization.</li>
+                        <li><strong>Configuration:</strong> App Verification, app-ads.txt Configuration, Release Management.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Firebase Experience</h3>
+                    <ul>
+                        <li>Firebase Authentication & Google Sign-In</li>
+                        <li>Cloud Firestore</li>
+                        <li>Firebase Realtime Database</li>
+                        <li>Firebase Console & google-services.json management</li>
+                        <li>SHA-1 / SHA-256 Configuration</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education & Certifications -->
+            <section class="grid-2-col">
+                <div>
+                    <h3>Education</h3>
+                    <ul>
+                        <li><strong>B.Tech – Computer Science & Engineering</strong></li>
+                        <li>CBSE Class XII (2022)</li>
+                        <li>CBSE Class X (2020)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>Android App Development with AI – Internshala</li>
+                        <li>TCS iON – YUVA AI For All (Issued: 08 Feb 2026)</li>
+                        <li>NASSCOM FutureSkills – Yuva AI for All Certificate of Participation</li>
+                        <li>Skill India – NSDC</li>
+                        <li>Remote Sensing & Geospatial Applications – ISRO (IIRS)</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Achievements -->
+            <section>
+                <h3>Key Achievements</h3>
+                <ul>
+                    <li>Published four production-ready Android applications on Google Play.</li>
+                    <li>Independently designed, developed, tested, and deployed Android applications.</li>
+                    <li>Comprehensive experience across the complete Android application development lifecycle.</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Ishan Mall. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

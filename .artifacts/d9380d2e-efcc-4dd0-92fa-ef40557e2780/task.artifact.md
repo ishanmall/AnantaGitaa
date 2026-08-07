@@ -1,0 +1,4 @@
+- [ ] Update `gradle.properties` with increased memory and daemon settings
+- [ ] Update `libs.versions.toml` to unify AGP version
+- [ ] Update root `build.gradle.kts` for consistency
+- [ ] Verify build with `./gradlew :app:compileDebugKotlin`
