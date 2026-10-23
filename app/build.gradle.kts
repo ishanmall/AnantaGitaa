@@ -8,13 +8,13 @@ plugins {
 
 android {
     namespace = "com.anantagita"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.anantagita"
         minSdk = 24
         targetSdk = 36
-        versionCode = 12
+        versionCode = 14
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -58,7 +58,6 @@ dependencies {
     // Compose BOM (keeps all Compose libs in sync)
     implementation(platform("androidx.compose:compose-bom:2024.09.01"))
 
-    // Billing Client (Duplicate 7.1.0 removed)
     implementation("com.android.billingclient:billing-ktx:8.0.0")
 
     // Core Compose
