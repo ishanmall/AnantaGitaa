@@ -8,13 +8,14 @@ plugins {
 
 android {
     namespace = "com.anantagita"
-    compileSdk = 37
+    compileSdk = 36
+
 
     defaultConfig {
         applicationId = "com.anantagita"
         minSdk = 24
         targetSdk = 36
-        versionCode = 14
+        versionCode = 16
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
